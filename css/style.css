@@ -1,1 +1,127 @@
-.flex-basics{display:-webkit-box;display:-ms-flexbox;display:flex;-ms-flex-pack:distribute;justify-content:space-around;-webkit-box-align:center;-ms-flex-align:center;align-items:center}.price-card{-webkit-box-orient:vertical;-webkit-box-direction:normal;-ms-flex-direction:column;flex-direction:column;width:360px;padding:20px 0;background-color:#ffffff;border-radius:5px}@font-face{font-family:'Encode Sans Condensed';font-style:normal;font-weight:400;src:local('Encode Sans Condensed Regular'), local('EncodeSansCondensed-Regular'), url(https://fonts.gstatic.com/s/encodesanscondensed/v2/j8_16_LD37rqfuwxyIuaZhE6cRXOLtm2gfT2hq-J.ttf) format('truetype')}@font-face{font-family:'Encode Sans Condensed';font-style:normal;font-weight:700;src:local('Encode Sans Condensed Bold'), local('EncodeSansCondensed-Bold'), url(https://fonts.gstatic.com/s/encodesanscondensed/v2/j8_46_LD37rqfuwxyIuaZhE6cRXOLtm2gfT-PYqZAC4N.ttf) format('truetype')}@font-face{font-family:'Lato';font-style:normal;font-weight:300;src:local('Lato Light'), local('Lato-Light'), url(https://fonts.gstatic.com/s/lato/v14/S6u9w4BMUTPHh7USSwiPHA.ttf) format('truetype')}html{height:100%}body{display:-webkit-box;display:-ms-flexbox;display:flex;-ms-flex-pack:distribute;justify-content:space-around;-webkit-box-align:center;-ms-flex-align:center;align-items:center;background-color:#fddf7f;height:100%}.plan-card{display:-webkit-box;display:-ms-flexbox;display:flex;-ms-flex-pack:distribute;justify-content:space-around;-webkit-box-align:center;-ms-flex-align:center;align-items:center;-webkit-box-orient:vertical;-webkit-box-direction:normal;-ms-flex-direction:column;flex-direction:column;width:360px;padding:20px 0;background-color:#ffffff;border-radius:5px}.plan-card--small{height:440px}.plan-card--big{height:500px}.plan-card__price{color:#02995b;font:700 70px/24px 'Encode Sans Condensed', sans-serif}.plan-card__title{color:#333333;font:400 54px/24px 'Encode Sans Condensed', sans-serif}.plan-card__description{color:#333333;font:300 20px/26px 'Lato', sans-serif}.plan-card__cup-img{height:135px;width:135px;background:url(../img/cups.png) no-repeat}.plan-card__cup-img--bronze{background-position:0}.plan-card__cup-img--gold{background-position:-447px}.plan-card__cup-img--silver{background-position:-223px}@media (max-width:800px){body{-webkit-box-orient:vertical;-webkit-box-direction:reverse;-ms-flex-direction:column-reverse;flex-direction:column-reverse}.plan-card{width:90%;min-height:400px}.plan-card:not(:first-child){margin-bottom:30px}.plan-card--big{-webkit-box-ordinal-group:2;-ms-flex-order:1;order:1}}
+/*Colors*/
+/*Fonts*/
+/*didn't found Miso so I used similar*/
+/*Mixins*/
+.flex-basics {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-pack: distribute;
+  justify-content: space-around;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+}
+.price-card {
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+  -ms-flex-direction: column;
+  flex-direction: column;
+  width: 360px;
+  padding: 20px 0;
+  background-color: #ffffff;
+  border-radius: 5px;
+}
+@font-face {
+  font-family: 'Encode Sans Condensed';
+  font-style: normal;
+  font-weight: 400;
+  src: local('Encode Sans Condensed Regular'), local('EncodeSansCondensed-Regular'), url(https://fonts.gstatic.com/s/encodesanscondensed/v2/j8_16_LD37rqfuwxyIuaZhE6cRXOLtm2gfT2hq-J.ttf) format('truetype');
+}
+@font-face {
+  font-family: 'Encode Sans Condensed';
+  font-style: normal;
+  font-weight: 700;
+  src: local('Encode Sans Condensed Bold'), local('EncodeSansCondensed-Bold'), url(https://fonts.gstatic.com/s/encodesanscondensed/v2/j8_46_LD37rqfuwxyIuaZhE6cRXOLtm2gfT-PYqZAC4N.ttf) format('truetype');
+}
+@font-face {
+  font-family: 'Lato';
+  font-style: normal;
+  font-weight: 300;
+  src: local('Lato Light'), local('Lato-Light'), url(https://fonts.gstatic.com/s/lato/v14/S6u9w4BMUTPHh7USSwiPHA.ttf) format('truetype');
+}
+html {
+  height: 100%;
+}
+body {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-pack: distribute;
+  justify-content: space-around;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  background-color: #fddf7f;
+  height: 100%;
+}
+.plan-card {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-pack: distribute;
+  justify-content: space-around;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+  -ms-flex-direction: column;
+  flex-direction: column;
+  width: 360px;
+  padding: 20px 0;
+  background-color: #ffffff;
+  border-radius: 5px;
+}
+.plan-card--small {
+  height: 440px;
+}
+.plan-card--big {
+  height: 500px;
+}
+.plan-card__price {
+  color: #02995b;
+  font: 700 70px/24px 'Encode Sans Condensed', sans-serif;
+}
+.plan-card__title {
+  color: #333333;
+  font: 400 54px/24px 'Encode Sans Condensed', sans-serif;
+}
+.plan-card__description {
+  color: #333333;
+  font: 300 20px/26px 'Lato', sans-serif;
+}
+.plan-card__cup-img {
+  height: 135px;
+  width: 135px;
+  background: url(../img/cups.png) no-repeat;
+}
+.plan-card__cup-img--bronze {
+  background-position: 0;
+}
+.plan-card__cup-img--gold {
+  background-position: -447px;
+}
+.plan-card__cup-img--silver {
+  background-position: -223px;
+}
+@media (max-width: 800px) {
+  body {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: reverse;
+    -ms-flex-direction: column-reverse;
+    flex-direction: column-reverse;
+  }
+  .plan-card {
+    width: 90%;
+    min-height: 400px;
+  }
+  .plan-card:not(:first-child) {
+    margin-bottom: 30px;
+  }
+  .plan-card--big {
+    -webkit-box-ordinal-group: 2;
+    -ms-flex-order: 1;
+    order: 1;
+  }
+}
