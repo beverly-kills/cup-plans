@@ -1,0 +1,99 @@
+/*Colors*/
+@bg-color: rgb(253, 223, 127);
+@dark-grey: rgb(51, 51, 51);
+@green: rgb(2, 153, 91);
+@white: rgb(255, 255, 255);
+
+/*Fonts*/
+@Miso: 'Encode Sans Condensed', sans-serif; /*didn't found Miso so adde similar*/
+@Lato: 'Lato', sans-serif;
+
+/*Mixins*/
+.flex-basics{
+	display: flex;
+	justify-content: space-around;
+	align-items: center;
+}
+
+.price-card{
+	flex-direction: column;
+	width: 360px;
+	padding: 20px 0;
+	background-color: @white;
+	border-radius: 5px;
+}
+
+@import url('https://fonts.googleapis.com/css?family=Encode+Sans+Condensed:400,700|Lato:300');
+
+html{
+	height: 100%;
+}
+
+body{
+	.flex-basics;
+	background-color: @bg-color;
+	height: 100%;
+}
+
+.plan-card{
+	.flex-basics;
+	.price-card;
+}
+
+.plan-card--small{
+	height: 440px;
+}
+
+.plan-card--big{
+	height: 500px;
+}
+
+.plan-card__price{
+	color: @green;
+	font:700 70px/24px @Miso;
+}
+
+.plan-card__title{
+	color:@dark-grey;
+	font:400 54px/24px @Miso;
+}
+
+.plan-card__description{
+	color:@dark-grey;
+	font:300 20px/26px @Lato;
+}
+
+.plan-card__cup-img{
+	height: 135px;
+	width: 135px;
+	background: url(../img/cups.png) no-repeat;
+
+	&--bronze{
+		background-position:0;
+	}
+	&--gold{
+		background-position: -447px;
+	}
+	&--silver{
+		background-position: -223px;
+	}
+}
+
+@media (max-width: 800px) {
+	body{
+		flex-direction: column-reverse;
+	}
+	
+	.plan-card{
+		width: 90%;
+		min-height: 400px;
+	}
+
+	.plan-card:not(:first-child){
+		margin-bottom: 30px;
+	}
+
+	.plan-card--big{
+		order: 1;
+	}
+}
